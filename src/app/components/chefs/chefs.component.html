@@ -1,0 +1,30 @@
+<!-- Chefs Section -->
+<section id="chefs" class="chefs section">
+    <!-- Section Title -->
+    <div class="container section-title">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+            @for (chef of chefs; track chefs) {
+            <div class="col-lg-4">
+                <div class="member">
+                    <img [src]=chef.img class="img-fluid" alt="">
+                    <div class="member-info">
+                        <div class="member-info-content">
+                            <h4>{{chef.name}}</h4>
+                            <span> {{chef.role}}</span>
+                        </div>
+                        <div class="social">
+                            <a [href]=chef.facebook target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a [href]=chef.instgram target=" _blank "><i class="bi bi-instagram "></i></a>
+                            <a [href]=chef.linkedin target="_blank "><i class="bi bi-linkedin "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>}
+            <!-- End Team Member -->

@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about {
+    background: url("../../../assets/img/about-bg.jpg") center center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.about:before {
+    content: "";
+    background: color-mix(in srgb, var(--background-color), transparent 12%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.about .container {
+    position: relative;
+}
+
+.about .content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.about .content .fst-italic {
+    color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .content ul li {
+    padding: 10px 0 0 0;
+    display: flex;
+}
+
+.about .content ul i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+    line-height: 1.2;
+    font-size: 1.25rem;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .about-img {
+    border: 6px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    transition: 0.3s;
+}
+
+.about .about-img:hover {
+    transform: scale(1.03);
+}
+
+
+/*--------------------------------------------------------------
+# Why Us Section
+--------------------------------------------------------------*/
+
+.why-us .card-item {
+    background: color-mix(in srgb, var(--default-color), transparent 95%);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+    position: relative;
+}
+
+.why-us .card-item span {
+    color: var(--accent-color);
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.why-us .card-item h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.why-us .card-item h4 a {
+    color: var(--heading-color);
+}
+
+.why-us .card-item p {
+    font-size: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    margin: 0;
+    padding: 0;
+}
+
+.why-us .card-item:hover {
+    background: var(--accent-color);
+    padding: 30px 30px 70px 30px;
+}
+
+.why-us .card-item:hover span,
+.why-us .card-item:hover h4 a,
+.why-us .card-item:hover p {
+    color: var(--contrast-color);
+}

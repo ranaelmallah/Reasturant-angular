@@ -1,0 +1,68 @@
+<!-- Menu Section -->
+<section id="menu" class="menu section mt-5">
+
+    <!-- Section Title -->
+    <div class="container section-title">
+        <h2>Menu</h2>
+        <p>Check Our Tasty Menu</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container isotope-layout">
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul class="menu-filters isotope-filters">
+                    <li data-filter="*" class="filter-active" (click)="onAll()">All</li>
+                    <li data-filter=".filter-starters" (click)="onStarters()">Starters</li>
+                    <li data-filter=".filter-salads" (click)="onSalads()">Salads</li>
+                    <li data-filter=".filter-specialty" (click)="onSpecialty()">Specialty</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Menu Filters -->
+
+        <div class="row isotope-container">
+
+
+            <!-- Menu Item -->
+            @if (starter) { @for (starter of starters; track starter.id) {
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+                <img [src]=starter.image class="menu-img" [alt]=starter.name>
+                <div class="menu-content ">
+                    <a href="# ">{{starter.name}}</a><span>{{starter.price}}</span>
+                </div>
+                <div class="menu-ingredients ">
+                    {{starter.discription}} <span class="float-end  p-2 text-light">{{starter.time}}</span>
+                </div>
+            </div>
+            }} @if (Salad) {@for (Salad of Salads; track Salad.id) {
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+                <img [src]=Salad.image class="menu-img" [alt]=Salad.name>
+                <div class="menu-content ">
+                    <a href="# ">{{Salad.name}}</a><span>{{Salad.price}}</span>
+                </div>
+                <div class="menu-ingredients ">
+                    {{Salad.discription}} <span class="float-end  p-2 text-light">{{Salad.time}}</span>
+                </div>
+            </div>
+            }}@if (Specialty) { @for (Specialty of Specialties; track Specialty.id) {
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+                <img [src]=Specialty.image class="menu-img" [alt]=Specialty.name>
+                <div class="menu-content ">
+                    <a href="# ">{{Specialty.name}}</a><span>{{Specialty.price}}</span>
+                </div>
+                <div class="menu-ingredients ">
+                    {{Specialty.discription}} <span class="float-end  p-2 text-light">{{Specialty.time}}</span>
+                </div>
+            </div>
+            }}
+            <!-- Menu Item -->
+
+        </div>
+        <!-- Menu Container -->
+
+    </div>
+
+</section>
+<!-- /Menu Section -->

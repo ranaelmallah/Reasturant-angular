@@ -1,0 +1,34 @@
+div {
+    background-image: url(../../../assets/img/download\ \(6\).jpeg);
+    opacity: .8;
+    background-size: 100%;
+    padding: 200px;
+    background-repeat: no-repeat;
+}
+
+.page-not-found {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page-not-found h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.page-not-found p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.page-not-found a {
+    font-size: 1.2em;
+    color: #ff6347;
+    /* Tomato color */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-not-found a:hover {
+    text-decoration: underline;
+}
