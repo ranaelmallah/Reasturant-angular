@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .hero {
-    background: url("../../../assets/img/hero-bg.jpg") center center;
+    /* background: url("../../../assets/img/hero-bg.jpg") center center; */
     width: 100%;
     min-height: 100vh;
     position: relative;
