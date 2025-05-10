@@ -6,7 +6,7 @@
             <a  routerLink="home"  class="logo d-flex align-items-center me-auto me-xl-0">
             <h1 class="sitename">Restaurantly</h1>
             </a>
-            <nav id="navmenu" class="navmenu ms-5 ">
+            <nav id="navmenu" class=" navmenu ms-5 ">
                 <ul>
                     <li><a routerLink="/home"  routerLinkActive="active">Home<br></a></li>
                     <li> <a routerLink="/about" routerLinkActive="active">About</a></li>
@@ -15,7 +15,24 @@
                     <li> <a routerLink="/gallary" routerLinkActive="active">Gallery</a> </li>
                     <li> <a routerLink="/contact" routerLinkActive="active">Contact</a> </li>
                 </ul>
-                <i class="mobile-nav-toggle  d-xl-none bi bi-list"></i>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       
+            <i class="mobile-nav-toggle  d-xl-none bi bi-list"></i>
+                
+        </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul>
+                        <li><a routerLink="/home"  routerLinkActive="active">Home<br></a></li>
+                        <li> <a routerLink="/about" routerLinkActive="active">About</a></li>
+                        <li><a routerLink="/menu" routerLinkActive="active">Menu</a></li>
+                        <li><a routerLink="/chefs" routerLinkActive="active">Chefs</a></li>
+                        <li> <a routerLink="/gallary" routerLinkActive="active">Gallery</a> </li>
+                        <li> <a routerLink="/contact" routerLinkActive="active">Contact</a> </li>
+                    </ul>
+                  
+                </div>        
             </nav>
             <a class="btn-book-a-table d-none d-xl-block " routerLink="/book-table">Book a Table</a>
 

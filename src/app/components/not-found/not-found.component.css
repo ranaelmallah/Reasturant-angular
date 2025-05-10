@@ -24,7 +24,6 @@ div {
 .page-not-found a {
     font-size: 1.2em;
     color: #ff6347;
-    /* Tomato color */
     text-decoration: none;
     cursor: pointer;
 }
